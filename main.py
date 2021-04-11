@@ -3,10 +3,10 @@ import random
 import sys
 
 
-def generateRandomPassword(passwordLength):
+def generateRandomPassword(password_length):
     password = []
 
-    for i in range(passwordLength):
+    for i in range(password_length):
         password.append(random.choice(string.digits + string.ascii_letters + string.punctuation))
 
     return ''.join(password)
